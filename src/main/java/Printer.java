@@ -11,7 +11,10 @@ public class Printer {
 
     public void print(int pages,int copies){
         int pagesused= pages*copies;
-        this.numberOfSheetsRemaining=this.numberOfSheetsRemaining-pagesused;
+        boolean count=enoughPapers(pagesused);
+        if(count==true){
+        this.numberOfSheetsRemaining=this.numberOfSheetsRemaining-pagesused;}
+        else{System.out.println("Not enough paper");}
     }
 
     public boolean enoughPapers(int pages){
