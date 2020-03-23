@@ -7,7 +7,7 @@ public class CalculatorTest {
     @Before
 
     public void before(){
-        calculator= new Calculator(5,11);
+        calculator= new Calculator(5,11,15,2);
     }
     @Test
     public void addNumbers(){
@@ -22,6 +22,11 @@ public class CalculatorTest {
     @Test
     public void multiplyNumbers(){
         assertEquals(55,calculator.multiply());
+    }
+
+    @Test
+    public void divideNumbers(){
+    assertEquals(7.5,calculator.divide(),0.01);
     }
 
 }
