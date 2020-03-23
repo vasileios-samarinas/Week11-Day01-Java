@@ -18,4 +18,8 @@ public class WaterBottle {
      this.volume=0;
  }
 
+ public void full(){
+     this.volume=100;
+ }
+
 }
