@@ -11,6 +11,10 @@ public class Calculator{
         return number1+number2;
     }
 
+    public int subtract(){
+        return number2-number1;
+    }
+
 }
 
 
