@@ -1,12 +1,17 @@
 public class Printer {
-    private int numberOfSheets;
+    private int numberOfSheetsRemaining;
 
-    public Printer(int numberOfSheets){
-        this.numberOfSheets=numberOfSheets;
+    public Printer(int numberOfSheetsRemaining){
+        this.numberOfSheetsRemaining=numberOfSheetsRemaining;
     }
 
     public int getSheets(){
-        return this.numberOfSheets;
+        return this.numberOfSheetsRemaining;
+    }
+
+    public void print(int pages,int copies){
+        int pagesused= pages*copies;
+        this.numberOfSheetsRemaining=this.numberOfSheetsRemaining-pagesused;
     }
 
 }
