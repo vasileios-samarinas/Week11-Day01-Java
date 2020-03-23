@@ -19,4 +19,14 @@ public class PrinterTest {
         printer.print(5,2);
         assertEquals(9,printer.getSheets());
     }
+
+    @Test
+    public void hasEnoughPapers(){
+        assertEquals(true,printer.enoughPapers(10));
+    }
+
+    @Test
+    public void hasNotEnoughPapers(){
+        assertEquals(false,printer.enoughPapers(20));
+    }
 }

@@ -14,4 +14,13 @@ public class Printer {
         this.numberOfSheetsRemaining=this.numberOfSheetsRemaining-pagesused;
     }
 
+    public boolean enoughPapers(int pages){
+        if (this.numberOfSheetsRemaining>=pages){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
 }
