@@ -15,6 +15,10 @@ public class Calculator{
         return number2-number1;
     }
 
+    public int multiply(){
+        return number1*number2;
+    }
+
 }
 
 
