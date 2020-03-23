@@ -15,4 +15,14 @@ public class WaterBottleTest {
         assertEquals(100,waterBottle.getVolume(),0.01);
     }
 
+    @Test
+    public void drinkGlass(){
+        waterBottle.drinkWater();
+        assertEquals(90,waterBottle.getVolume(),0.01);
+    }
+
+    @Test
+    public void emptyBottle(){
+        assertEquals(0,waterBottle.empty(),0.01);
+    }
 }
